@@ -64,13 +64,16 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="TfsApi">
-      <HintPath>..\..\libs\TfsApi.dll</HintPath>
+      <HintPath>..\packages\TfsApi.1.0.0\lib\net45\TfsApi.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoAttachWorkItemIDsSubscriber.cs" />
     <Compile Include="NumberParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
